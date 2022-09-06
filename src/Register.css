@@ -1,0 +1,90 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.login > img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+.login > div.form {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-size: 15px;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.login > div.form > h2 {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.login > div.form > label {
+  margin-bottom: 5px;
+}
+.login > div.form > input {
+  height: 35px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid gray;
+}
+.login > div.form > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login > div.form > button {
+  border-radius: 100px;
+  padding: 15px;
+  transition: 500ms ease;
+}
+
+.login > div.form > button.btn-login {
+  border: none;
+  background-color: #0a66c2;
+  color: whitesmoke;
+}
+.login > div.form > button.btn-google {
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  background-color: transparent;
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.btn-google img {
+  margin-right: 5px;
+}
+.login > div.form > button.btn-login:hover {
+  background-color: #00366d;
+  cursor: pointer;
+}
+.login > div.form > button.btn-google:hover {
+  background-color: #0a66c22c;
+  cursor: pointer;
+}
+.login > div.form > p > span.login_register {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .login > div.form {
+    width: 300px;
+  }
+}
